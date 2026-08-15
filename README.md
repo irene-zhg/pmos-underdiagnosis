@@ -18,11 +18,17 @@ Which county-level social vulnerability and healthcare access factors best predi
 3. Identified PMOS underdiagnosis risk for all 3,144 U.S. Counties
 
 ## Methodologies 
-3 national datasets were 
+
 
 ## Data Sources
+* Centers for Disease Control and Prevention (CDC). (2025). PLACES: Local Data for Better Health, County Data, 2025 Release. Atlanta, GA: U.S. Department of Health and Human Services. https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb 
+* Centers for Disease Control and Prevention / Agency for Toxic Substances and Disease Registry / Geospatial Research, Analysis, and Services Program (CDC/ATSDR/GRASP). (2022). CDC/ATSDR Social Vulnerability Index 2022 Database, United States. 
+* National Center for Health Statistics (NCHS). (2024). 2023 NCHS Urban-Rural Classification Scheme for Counties. Centers for Disease Control and Prevention. https://www.cdc.gov/nchs/data-analysis-tools/urban-rural.html. 
 
 ## Technologies Used
+* Python
+* Streamlit
+* Google Colab
 
 ## Authors
  
