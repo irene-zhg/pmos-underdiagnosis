@@ -18,7 +18,7 @@ Which county-level social vulnerability and healthcare access factors best predi
 3. Identified PMOS underdiagnosis risk for all 3,144 U.S. Counties
 
 ## Methodologies 
-3 national datasets were \
+3 national datasets were 
 
 ## Data Sources
 
