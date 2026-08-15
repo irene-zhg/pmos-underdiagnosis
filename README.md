@@ -17,4 +17,12 @@ Which county-level social vulnerability and healthcare access factors best predi
 2. Target engineered a risk predictor variable.
 3. Identified PMOS underdiagnosis risk for all 3,144 U.S. Counties
 
+## Methodologies 
+3 national datasets were \
+
+## Data Sources
+
+## Technologies Used
+
+## Authors
  
