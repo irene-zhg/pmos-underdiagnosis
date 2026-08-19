@@ -1,5 +1,5 @@
 # Predicting County-Level PMOS Underdiagnosis Risk in the US
-AI4ALL Ignite 2026 Portfolio Project | Group 14B \ 
+AI4ALL Ignite 2026 Portfolio Project | Group 14B  
 Irene Zhang, Joyce Xu, Walter Valera, Vaishali Allibada, Andy Romero
 
 A machine learning pipeline that predicts US counties at high risk of PMOS (formerly PCOS) underdiagnosis, using public health datasets encompassing social vulnerability, health access, health outcome, and geography.  
