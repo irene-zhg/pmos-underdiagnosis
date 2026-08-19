@@ -17,8 +17,6 @@ Which county-level social vulnerability and healthcare access factors best predi
 2. Target engineered a risk predictor variable.
 3. Identified PMOS underdiagnosis risk for all 3,144 U.S. Counties
 
-## Methodologies 
-
 
 ## Data Sources
 * Centers for Disease Control and Prevention (CDC). (2025). PLACES: Local Data for Better Health, County Data, 2025 Release. Atlanta, GA: U.S. Department of Health and Human Services. https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb 
@@ -30,5 +28,4 @@ Which county-level social vulnerability and healthcare access factors best predi
 * Streamlit
 * Google Colab
 
-## Authors
  
