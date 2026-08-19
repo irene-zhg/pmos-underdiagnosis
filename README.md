@@ -21,18 +21,18 @@ Which county-level social vulnerability and healthcare access factors best predi
   **Motivation**: Identifying geographic patterns of underdiagnosis can support future targeted public health outreach and more equitable diagnostic and treatment access. 
 
 ## Approach
-**1. Data Selection & Merge**: Three national CDC/NCHS datasets were merged on standardized FIPS county codes.\
+**1. Data Selection & Merge**: Three national CDC/NCHS datasets were merged on standardized FIPS county codes.
 * [Social Vulnerability Index (2022)](url)
 * [PLACES County Data (2025)](url)
-* [NCHS Urban-Rural Classification (2023)](url)\
+* [NCHS Urban-Rural Classification (2023)](url)
 
 187 missing PLACES values tied entirely to Kentucky and Pennsylvania. Pre-imputation check found notably lower minority population share and higher poverty for these counties, and no significant difference for rurality. For further EDA, see colab.
 
-**2. Label Engineering**: No public dataset directly measures underdiagnosis, so a binary composite target label was engineered from three literature-backed signals.\
+**2. Label Engineering**: No public dataset directly measures underdiagnosis, so a binary composite target label was engineered from three literature-backed signals.
 
 * **Signal 1**: High social vulnerability - top-quartile SVI index score (Silva et al., 2024)
 * **Signal 2**: Low preventative healthcare engagement - bottom-quartile annual checkup or mammography rate (Silva et al., 2024)
-* **Signal 3**: Rural/peri-urban NCHS classification - >= 4 NCHS code (Ramphul et al., 2025)\
+* **Signal 3**: Rural/peri-urban NCHS classification - >= 4 NCHS code (Ramphul et al., 2025)
 Signals were built using select features from the datasets, and these features were dropped from model training to prevent data leakage.
 
 <img width="280" height="179" alt="Screenshot 2026-08-19 at 3 05 14 PM" src="https://github.com/user-attachments/assets/9e0e4363-344e-4d32-8c80-e7c08c625b4d" />
