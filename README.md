@@ -14,9 +14,9 @@ Polyendocrine Metabolic Ovarian Syndrome (PMOS), previously known as Polycystic 
 Despite being a major public health challenge, PMOS is severely underdiagnosed, with roughly 70% of affected women undiagnosed (WHO, 2026). Prior research suggests that patterns of structural racism and social determinants of health drive this diagnostic inequity, but no existing dataset directly measures underdiagnosis. Our project provides one as the first national-level model, using a composite label engineered from literature, and trains machine learning models to predict it.
 
 ## Research Question
-Which county-level social vulnerability and healthcare access factors best predict PMOS underdiagnosis risk across the United States, and which counties are most at risk? \
+Which county-level social vulnerability and healthcare access factors best predict PMOS underdiagnosis risk across the United States, and which counties are most at risk?
 
-  **Hypothesis**: Counties with greater social vulnerability and reduced healthcare access will have a higher predicted risk of PMOS underdiagnosis. \
+  **Hypothesis**: Counties with greater social vulnerability and reduced healthcare access will have a higher predicted risk of PMOS underdiagnosis.
   
   **Motivation**: Identifying geographic patterns of underdiagnosis can support future targeted public health outreach and more equitable diagnostic and treatment access. 
 
