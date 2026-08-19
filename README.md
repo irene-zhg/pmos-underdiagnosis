@@ -80,11 +80,14 @@ Validation included:
 **Target Engineering and Feature Configuration**
 * Features used in as predictors come from the same datasets with which the target variable has been engineered
 * Used features could contain inherent biases
+
 **Data availability**
 * PMOS is complex and cannot be diagnosed by a single test
 * No available patient-level clinical datasets
+
 **Data Bias**
 * Used data comes from the CDC, an organization with its internal bias such as underrepresenting populations with lower healthcare engagement due to survey selection bias
+
 **Geographical Scope**
 * Limited to U.S. counties, cannot be simply extrapolated for other populations without consideration
 
