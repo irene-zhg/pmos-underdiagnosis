@@ -1,5 +1,6 @@
 # Predicting County-Level PMOS Underdiagnosis Risk in the US
-AI4ALL Ignite 2026 Portfolio Project
+AI4ALL Ignite 2026 Portfolio Project | Group 14B
+Irene Zhang, Joyce Xu, Walter Valera, Vaishali Allibada, Andy Romero
 
 ## What is PMOS?
 **Background and Problem Statement**\
