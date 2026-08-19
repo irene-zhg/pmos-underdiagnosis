@@ -15,13 +15,15 @@ Despite being a major public health challenge, PMOS is severely underdiagnosed, 
 
 ## Research Question
 Which county-level social vulnerability and healthcare access factors best predict PMOS underdiagnosis risk across the United States, and which counties are most at risk? \
+
   **Hypothesis**: Counties with greater social vulnerability and reduced healthcare access will have a higher predicted risk of PMOS underdiagnosis. \
+  
   **Motivation**: Identifying geographic patterns of underdiagnosis can support future targeted public health outreach and more equitable diagnostic and treatment access. 
 
 ## Approach
-**1. Data Selection & Merge**: Three national CDC/NCHS datasets were merged on standardized FIPS county codes: 
-**2. Label Engineering**
-**3. Feature Selection**
+**1. Data Selection & Merge**: Three national CDC/NCHS datasets were merged on standardized FIPS county codes:  
+**2. Label Engineering**  
+**3. Feature Selection**  
 **4. Training Models & Evaluation**
 
 ## Key Results 
@@ -39,7 +41,8 @@ Which county-level social vulnerability and healthcare access factors best predi
 **Data:**
 * Centers for Disease Control and Prevention (CDC). (2025). PLACES: Local Data for Better Health, County Data, 2025 Release. Atlanta, GA: U.S. Department of Health and Human Services. https://data.cdc.gov/500-Cities-Places/PLACES-Local-Data-for-Better-Health-County-Data-20/swc5-untb 
 * Centers for Disease Control and Prevention / Agency for Toxic Substances and Disease Registry / Geospatial Research, Analysis, and Services Program (CDC/ATSDR/GRASP). (2022). CDC/ATSDR Social Vulnerability Index 2022 Database, United States. 
-* National Center for Health Statistics (NCHS). (2024). 2023 NCHS Urban-Rural Classification Scheme for Counties. Centers for Disease Control and Prevention. https://www.cdc.gov/nchs/data-analysis-tools/urban-rural.html. 
+* National Center for Health Statistics (NCHS). (2024). 2023 NCHS Urban-Rural Classification Scheme for Counties. Centers for Disease Control and Prevention. https://www.cdc.gov/nchs/data-analysis-tools/urban-rural.html.
+
 **Literature:**
 * Gadhoumi, K., et al. (2026). Strategies for mitigating artificial intelligence bias in healthcare: a systematic review. JAMIA Open, 9(3), ooag081. https://academic.oup.com/jamiaopen/article/9/3/ooag081/8701256. 
 * Neven, A. C., et al. (2026). Prevalence of polycystic ovary syndrome: a global and regional systematic review and meta-analysis. Human Reproduction Update, 32(3), 277. https://academic.oup.com/humupd/article-abstract/32/3/277/8424333?redirectedFrom=fulltext. 
