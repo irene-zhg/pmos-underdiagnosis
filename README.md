@@ -37,7 +37,7 @@ Signals were built using select features from the datasets, and these features w
 
 <img width="280" height="179" alt="Screenshot 2026-08-19 at 3 05 14 PM" src="https://github.com/user-attachments/assets/9e0e4363-344e-4d32-8c80-e7c08c625b4d" />
 
-**Underdiagnosis risk** = Signal 1 **and** (Signal 2 **or** Signal 3) - yielded a 21.3% positive rate (671/3,144 counties)\
+**Underdiagnosis risk** = Signal 1 **and** (Signal 2 **or** Signal 3) - yielded a 21.3% positive rate (671/3,144 counties)
 
 **3. Feature Selection**: 25 literature-based candidate features were taken across the datasets. Features used for label engineering—Signal 1 (RPL_THEMES + 4 sub-themes), Signal 2 (ANNUAL_CHECKUP + MAMMOGRAPHY), and Signal 3 (RURAL_CODE)—were excluded from the model. Three US census-region dummies engineered from ST_ABBR (Northeast, South, and West, with Midwest baseline, SVI 2022) were added as a geography signal separate from NCHS rurality. Net model input included 20 features. 
 
@@ -66,9 +66,11 @@ Validation included:
 ## Impact & Use
 **National-Scale Approach**
 * First step towards national county-level predictive model for PMOS underdiagnosis
+
 **Awareness**
 * Utilized AI/ML models to highlight need 
 * Supports future research, resource allocation, policy in highly vulnerable areas
+
 **Healthcare Infrastructure and Policy**
 * Resource to further infrastructure and policy based on need and socioeconomic factors
   * Healthcare facilities, social vulnerability aid, etc.
