@@ -25,7 +25,8 @@ Which county-level social vulnerability and healthcare access factors best predi
 * [Social Vulnerability Index (2022)](url)
 * [PLACES County Data (2025)](url)
 * [NCHS Urban-Rural Classification (2023)](url)\
-187 missing PLACES values tied entirely to Kentucky and Pennsylvania. Higher rural codes suggest structural bias in CDC survey collection. For further EDA, see colab.
+
+187 missing PLACES values tied entirely to Kentucky and Pennsylvania. Pre-imputation check found notably lower minority population share and higher poverty for these counties, and no significant difference for rurality. For further EDA, see colab.
 
 **2. Label Engineering**: No public dataset directly measures underdiagnosis, so a binary composite target label was engineered from three literature-backed signals.\
 
@@ -34,15 +35,26 @@ Which county-level social vulnerability and healthcare access factors best predi
 * **Signal 3**: Rural/peri-urban NCHS classification - >= 4 NCHS code (Ramphul et al., 2025)\
 Signals were built using select features from the datasets, and these features were dropped from model training to prevent data leakage.
 
-Underdiagnosis risk (1) = Signal 1 **and** (Signal 2 **or** Signal 3) - yielded a 21.3% positive rate (671/3144 counties)\
+<img width="280" height="179" alt="Screenshot 2026-08-19 at 3 05 14 PM" src="https://github.com/user-attachments/assets/9e0e4363-344e-4d32-8c80-e7c08c625b4d" />
 
-**3. Feature Selection**: 25 literature-based features were used for modeling
+**Underdiagnosis risk** = Signal 1 **and** (Signal 2 **or** Signal 3) - yielded a 21.3% positive rate (671/3,144 counties)\
+
+**3. Feature Selection**: 25 literature-based candidate features were taken across the datasets. Features used for label engineering—Signal 1 (RPL_THEMES + 4 sub-themes), Signal 2 (ANNUAL_CHECKUP + MAMMOGRAPHY), and Signal 3 (RURAL_CODE)—were excluded from the model. Three US census-region dummies engineered from ST_ABBR (Northeast, South, and West, with Midwest baseline, SVI 2022) were added as a geography signal separate from NCHS rurality. Net model input included 20 features. 
+
 | SVI 2022                                                                                                                                                                                         | PLACES 2025                                                                        | NCHS 2023  |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|------------|
-| RPL_THEMES<br>RPL_THEME1 through RPL_THEME4<br>EP_NOVEH<br>EP_AFAM<br>EP_UNINSUR<br>EP_LIMENG<br>EP_POV150<br>EP_UNEMP<br>EP_NOHSDP<br>EP_HISP<br>EP_MUNIT<br>EP_HBURD<br>EP_DISABL<br>EP_MINRTY | MAMMOUSE<br>CHECKUP<br>OBESITY<br>DIABETES<br>DEPRESSION<br>HIGHCHOL<br>FOODINSECU | CODE2023   |
+| RPL_THEMES<br>RPL_THEME1 through RPL_THEME4<br>EP_NOVEH<br>EP_AFAM<br>EP_UNINSUR<br>EP_LIMENG<br>EP_POV150<br>EP_UNEMP<br>EP_NOHSDP<br>EP_HISP<br>EP_MUNIT<br>EP_HBURD<br>EP_DISABL<br>EP_MINRTY | MAMMOGRAPHY<br>CHECKUP<br>OBESITY<br>DIABETES<br>DEPRESSION<br>HIGHCHOL<br>FOODINSECU | CODE2023   |
 |                                                                                                                                                                                                  |                                                                                    |            |
 |                                                                                                                                                                                                  |                                                                                    |            |
-**4. Training Models & Evaluation**
+
+**4. Training Models & Evaluation**: three classifier models (Random Forest, Logistic Regression, XGBoost) were trained using class-balanced weighting to account for the ~21%/79% label imbalance\
+<img width="377" height="155" alt="Screenshot 2026-08-19 at 3 08 15 PM" src="https://github.com/user-attachments/assets/9b325205-0e6a-4d60-b230-38ffd2eb678d" />
+
+Validation included:
+* Stratified 80/20 train/test split, with overfitting check
+* Stratified 5-fold cross-validation across all 3,144 counties for key metrics
+* Nested cross-validation with threshold tuning optimizing for F2 to favor recall (missing true underdiagnosed county more costly than false alarm)
+* A subgroup fairness audit and cross-year data drift check with PLACES 2024 vs. 2025 (see colab)
 
 ## Key Results 
 1. Ran 3 National Datasets backed by research to identify key features that contribute to PMOS underdiagnosis.
