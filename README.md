@@ -4,7 +4,7 @@ Irene Zhang, Joyce Xu, Walter Valera, Vaishali Allibada, Andy Romero
 
 A machine learning pipeline that predicts US counties at high risk of PMOS (formerly PCOS) underdiagnosis, using public health datasets encompassing social vulnerability, health access, health outcome, and geography.  
 
-Deployed as an interactive county risk map, a valuable predictive model at the local, regional, and national level to raise awareness and deploy interventions to prevent further healthcare gaps. 
+Valuable predictive model at the local, regional, and national level to raise awareness and deploy interventions to prevent further healthcare gaps. 
 
 ## Table of Contents - to be added
 
