@@ -61,14 +61,35 @@ Validation included:
 2. Target engineered a risk predictor variable.
 3. Identified PMOS underdiagnosis risk for all 3,144 U.S. Counties
 
+## Fairness & Bias Audit
+
+## Impact & Use
+**National-Scale Approach**
+* First step towards national county-level predictive model for PMOS underdiagnosis
+
+**Awareness**
+* Utilized AI/ML models to highlight need 
+* Supports future research, resource allocation, policy in highly vulnerable areas
+
+**Healthcare Infrastructure and Policy**
+* Resource to further infrastructure and policy based on need and socioeconomic factors
+  * Healthcare facilities, social vulnerability aid, etc.
+* Supports equitable healthcare approaches and evidence-based public health planning 
+
+## Limitations
+**Target Engineering and Feature Configuration**
+* Features used in as predictors come from the same datasets with which the target variable has been engineered
+* Used features could contain inherent biases
+
+**Data availability**
+* PMOS is complex and cannot be diagnosed by a single test
+* No available patient-level clinical datasets
 
 **Data Bias**
 * Used data comes from the CDC, an organization with its internal bias such as underrepresenting populations with lower healthcare engagement due to survey selection bias
 
 **Geographical Scope**
 * Limited to U.S. counties, cannot be simply extrapolated for other populations without consideration
-
-
 
 ## Data Sources & References
 **Data:**
